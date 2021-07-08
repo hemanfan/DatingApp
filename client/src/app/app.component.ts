@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-root',
@@ -8,7 +9,8 @@ import { Component, OnInit } from '@angular/core';
 export class AppComponent implements OnInit {
   title = 'The Dating App';
 
-  constructor(private http: HttpClient ){}
+  constructor(private http: HttpClient ) {}
+  
   ngOnInit(): void {
     throw new Error('Method not implemented.');
   }
